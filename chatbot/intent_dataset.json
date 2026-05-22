@@ -1,0 +1,229 @@
+[
+  {
+    "intent": "medium_of_instruction",
+    "patterns": [
+      "What is the medium of instruction?",
+      "Is teaching in English?",
+      "Which language is used for teaching?"
+    ],
+    "responses": [
+      "The medium of instruction at Jaihind College of Engineering is English."
+    ]
+  },
+  {
+    "intent": "course_duration",
+    "patterns": [
+      "What is the duration of engineering course?",
+      "How many years is engineering?",
+      "Course duration for B.E."
+    ],
+    "responses": [
+      "The undergraduate engineering program has a duration of four years."
+    ]
+  },
+  {
+    "intent": "attendance_policy",
+    "patterns": [
+      "Is attendance compulsory?",
+      "Attendance rules",
+      "Minimum attendance required"
+    ],
+    "responses": [
+      "Yes, students are required to maintain the minimum attendance as per university norms."
+    ]
+  },
+  {
+    "intent": "exam_pattern",
+    "patterns": [
+      "How are exams conducted?",
+      "Examination pattern",
+      "University exams details"
+    ],
+    "responses": [
+      "Examinations are conducted as per the guidelines and schedule of Savitribai Phule Pune University."
+    ]
+  },
+  {
+    "intent": "internal_assessment",
+    "patterns": [
+      "Are internal exams conducted?",
+      "Internal assessment details",
+      "Unit tests and assignments"
+    ],
+    "responses": [
+      "Yes, internal assessments such as unit tests, assignments, and practical evaluations are conducted regularly."
+    ]
+  },
+  {
+    "intent": "fee_structure",
+    "patterns": [
+      "What is the fee structure?",
+      "Engineering fees",
+      "How much is the college fee?"
+    ],
+    "responses": [
+      "The fee structure is decided by the Fee Regulating Authority and may change yearly. Students should contact the college office for exact details."
+    ]
+  },
+  {
+    "intent": "scholarships",
+    "patterns": [
+      "Are scholarships available?",
+      "Government scholarship",
+      "Fee concession"
+    ],
+    "responses": [
+      "Yes, government and private scholarships are available for eligible students as per applicable rules."
+    ]
+  },
+  {
+    "intent": "hostel_rules",
+    "patterns": [
+      "Is hostel compulsory?",
+      "Hostel rules",
+      "Do students have to stay in hostel?"
+    ],
+    "responses": [
+      "No, hostel accommodation is optional and depends on the student's preference."
+    ]
+  },
+  {
+    "intent": "hostel_facilities",
+    "patterns": [
+      "Are hostel rooms shared?",
+      "Hostel facilities",
+      "Is food provided in hostel?"
+    ],
+    "responses": [
+      "Hostel rooms are generally shared among students and mess facilities are available."
+    ]
+  },
+  {
+    "intent": "transport_access",
+    "patterns": [
+      "Is bus facility available?",
+      "College transport",
+      "How to reach college?"
+    ],
+    "responses": [
+      "Yes, the college provides bus transportation from nearby locations and is accessible by public transport."
+    ]
+  },
+  {
+    "intent": "internet_facility",
+    "patterns": [
+      "Is Wi-Fi available?",
+      "Internet facility",
+      "Campus WiFi"
+    ],
+    "responses": [
+      "Yes, Wi-Fi and internet facilities are available on campus for academic use."
+    ]
+  },
+  {
+    "intent": "canteen_facility",
+    "patterns": [
+      "Is there a canteen?",
+      "Food facility in college",
+      "College canteen"
+    ],
+    "responses": [
+      "Yes, the college has a canteen that provides food and refreshments to students."
+    ]
+  },
+  {
+    "intent": "medical_facility",
+    "patterns": [
+      "Is medical facility available?",
+      "Health support",
+      "Medical assistance"
+    ],
+    "responses": [
+      "Basic medical assistance is available, and nearby medical facilities can be accessed if required."
+    ]
+  },
+  {
+    "intent": "placement_policy",
+    "patterns": [
+      "Is placement compulsory?",
+      "Placement guarantee",
+      "Do all students get placed?"
+    ],
+    "responses": [
+      "Placement assistance is provided, but selection depends on student performance and company criteria."
+    ]
+  },
+  {
+    "intent": "internship_support",
+    "patterns": [
+      "Does college help with internships?",
+      "Internship support",
+      "Internship guidance"
+    ],
+    "responses": [
+      "Yes, students receive guidance and support for internships through departments and the placement cell."
+    ]
+  },
+  {
+    "intent": "training_programs",
+    "patterns": [
+      "Is aptitude training provided?",
+      "Soft skills training",
+      "Communication skills training"
+    ],
+    "responses": [
+      "Yes, training sessions related to aptitude, technical skills, and communication are conducted for students."
+    ]
+  },
+  {
+    "intent": "student_activities",
+    "patterns": [
+      "Are technical events organized?",
+      "Cultural activities",
+      "College events"
+    ],
+    "responses": [
+      "Yes, technical events, workshops, seminars, and cultural programs are organized regularly."
+    ]
+  },
+  {
+    "intent": "safety_policy",
+    "patterns": [
+      "Is the campus safe?",
+      "Anti ragging policy",
+      "Campus security"
+    ],
+    "responses": [
+      "Yes, the campus follows strict anti-ragging rules and has security staff to ensure student safety."
+    ]
+  },
+  {
+    "intent": "parent_visit",
+    "patterns": [
+      "Can parents visit college?",
+      "Parent meeting",
+      "Campus visit for parents"
+    ],
+    "responses": [
+      "Yes, parents are welcome to visit the campus during working hours."
+    ]
+  },
+  {
+    "intent": "campus_visit",
+    "patterns": [
+       "Can I take a college tour?",
+    "I want a campus tour",
+    "Is campus tour available?",
+    "Can I visit college for tour?",
+    "College tour",
+    "Show me the campus",
+    "Can I see the college before admission?",
+    "Is guided campus tour available?",
+    "Can I walk around campus?",
+    "I want to see the facilities"
+    ],
+    "responses": [
+      "Yes, prospective students can visit the campus to understand the facilities and environment."
+    ]
+  }
+]

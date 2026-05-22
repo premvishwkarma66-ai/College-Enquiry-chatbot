@@ -1,0 +1,286 @@
+/* hide utility */
+.hidden {
+  display: none !important;
+}
+
+/* floating button */
+#chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  padding: 10px;
+  z-index: 9999;
+}
+
+/* chat widget */
+#chat-widget {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 360px;
+  height: 480px;
+  background: #111827;
+  color: white;
+  border-radius: 10px;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+
+  transform: translateY(10px) scale(0.98);
+  transition: all 0.25s ease;
+}
+
+#chat-widget.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* header */
+#chat-header {
+  padding: 10px;
+  background: hsl(226, 71%, 40%);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background: #1e40af;
+  padding: 10px;
+}
+
+#expand-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* fullscreen mode */
+#chat-widget.fullscreen {
+  width: 95vw;
+  height: 95vh;
+  right: 2.5vw;
+  bottom: 2.5vh;
+  border-radius: 12px;
+}
+
+/* messages area */
+#chat-window {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* input area */
+#chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #374151;
+}
+
+#chat-input input {
+  flex: 1;
+  padding: 6px;
+}
+
+#chat-input button {
+  margin-left: 6px;
+}
+
+/* messages */
+.msg-user {
+  text-align: right;
+  margin: 6px 0;
+  align-self: flex-end;
+  background: #2563eb;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 14px 14px 4px 14px;
+  max-width: 75%;
+}
+
+.msg-bot {
+  text-align: left;
+  margin: 6px 0;
+  align-self: flex-start;
+  background: #1f2937;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 14px 14px 14px 4px;
+  max-width: 75%;
+}
+
+.typing {
+  display: flex;
+  gap: 6px;
+  padding: 6px 10px;
+}
+
+.typing span {
+  width: 8px;
+  height: 8px;
+  background: #9ca3af;
+  border-radius: 50%;
+  animation: blink 1.4s infinite both;
+}
+
+.typing span:nth-child(2) { animation-delay: 0.2s; }
+.typing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes blink {
+  0% { opacity: 0.2; }
+  20% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+/* timestamp */
+.msg-time {
+  font-size: 11px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+/* align timestamp with message side */
+.msg-user .msg-time {
+  text-align: right;
+}
+
+.msg-bot .msg-time {
+  text-align: left;
+}
+
+
+.date-separator {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.msg-time {
+  font-size: 11px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.msg-bot .msg-time {
+  text-align: left;
+}
+
+/* message row with avatar */
+.msg-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+/* reverse for user */
+.msg-row.user {
+  flex-direction: row-reverse;
+}
+
+/* avatar image */
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* keep bubbles nice */
+.msg-bot,
+.msg-user {
+  max-width: 70%;
+}
+
+/* ===== ULTRA COOL SKY-BLUE CHAT BUTTON ===== */
+.chat-float-btn {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 30px 18px 30px 30px; /* cool asymmetric shape */
+  background: linear-gradient(135deg, #4facfe, #00c6ff);
+  box-shadow: 
+    0 4px 15px rgba(79, 172, 254, 0.5),
+    0 0 0 0 rgba(79, 172, 254, 0.6);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+/* Inner layout */
+.chat-btn-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Icon */
+.chat-icon {
+  font-size: 26px;
+  transition: transform 0.3s ease;
+}
+
+/* Label text */
+.chat-label {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Hover effects */
+.chat-float-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 
+    0 8px 22px rgba(79, 172, 254, 0.7),
+    0 0 0 8px rgba(79, 172, 254, 0.2);
+}
+
+/* Rotate icon on hover */
+.chat-float-btn:hover .chat-icon {
+  transform: rotate(15deg);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 
+      0 4px 15px rgba(79, 172, 254, 0.5),
+      0 0 0 0 rgba(79, 172, 254, 0.6);
+  }
+  70% {
+    box-shadow: 
+      0 4px 15px rgba(79, 172, 254, 0.5),
+      0 0 0 10px rgba(79, 172, 254, 0);
+  }
+  100% {
+    box-shadow: 
+      0 4px 15px rgba(79, 172, 254, 0.5),
+      0 0 0 0 rgba(79, 172, 254, 0);
+  }
+}
+
+/* IMPORTANT FIX: make sure inner elements don't block clicks */
+.chat-float-btn *,
+.chat-btn-inner,
+.chat-icon,
+.chat-label {
+  pointer-events: none;
+}
+
+/* But keep the button clickable */
+.chat-float-btn {
+  pointer-events: auto;
+}

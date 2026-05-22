@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Enquiry Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/chatbot.css') }}">
+</head>
+<body>
+
+<h2>Chatbot Page Loaded</h2>
+
+<!-- Floating Button -->
+<button id="chat-toggle" class="chat-float-btn">
+  <span class="icon">💬</span>
+</button>
+
+
+<!-- Chat Widget -->
+<div id="chat-widget" class="hidden">
+
+  <div id="chat-header">
+  <span>🎓 College Enquiry Bot</span>
+  <button id="expand-btn" title="Expand">⛶</button>
+</div>
+
+  <div id="chat-window"></div>
+  <div id="typing" class="typing hidden">
+    <span></span><span></span><span></span>
+  </div>
+
+  <div id="chat-input">
+    <input id="userInput" placeholder="Type your message..." />
+    <button id="send-btn">Send</button>
+  </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/chatbot-ui.js') }}"></script>
+</body>
+</html>

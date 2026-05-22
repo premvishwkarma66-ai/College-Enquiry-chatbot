@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='admin/admin.css') }}">
+</head>
+<body>
+
+<div class="admin-container">
+
+  <aside class="sidebar">
+    <h3>Admin</h3>
+    <a href="/admin/dashboard">Dashboard</a>
+    <a href="/admin/faq">FAQ Manager</a>
+    <a href="/admin/logs">Chat Logs</a>
+    <a href="/admin/logout">Logout</a>
+  </aside>
+
+  <main class="content">
+    <h2>Dashboard</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h4>Total Enquiries</h4>
+        <p>{{ total_enquiries }}</p>
+      </div>
+
+      <div class="card">
+        <h4>Top Intent</h4>
+        <p>{{ top_intent.intent if top_intent else "N/A" }}</p>
+      </div>
+    </div>
+
+    <h3>Recent Chats</h3>
+
+    <table>
+      <tr>
+        <th>Query</th>
+        <th>Reply</th>
+        <th>Intent</th>
+        <th>Time</th>
+      </tr>
+
+      {% for log in logs %}
+      <tr>
+        <td>{{ log.user_query }}</td>
+        <td>{{ log.bot_reply }}</td>
+        <td>{{ log.intent }}</td>
+        <td>{{ log.created_on }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+  </main>
+
+</div>
+
+</body>
+</html>
